@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <base href="/">
+    <title>Aggregion Test Application | AngularJS</title>
+    <link rel="stylesheet" href="/app/layout/css/style.css"></link>
+    <link rel="stylesheet" href="/bower_components/angular-material/angular-material.min.css">
+</head>
+<body>
+
+    <div ui-view></div>
+
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="/bower_components/angular-aria/angular-aria.min.js"></script>
+    <script src="/bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="/bower_components/angular-material/angular-material.min.js"></script>
+    <!-- modules -->
+    <script src="/app/app.module.js"></script>
+    <script src="/app/app.config.js"></script>
+    <script src="/app/app.routes.js"></script>
+    <!-- components -->
+    <script src="/app/components/previewimg.directive.js"></script>
+    <script src="/app/components/previewvideo.directive.js"></script>
+    <script src="/app/components/bundlelink.directive.js"></script>
+    <!-- resources -->
+    <script src="/app/resource/books/Book.resource.js"></script>
+    <script src="/app/resource/books/Bundles.resource.js"></script>
+    <script src="/app/resource/books/Catalog.resource.js"></script>
+    <!-- services -->
+    <script src="/app/services/books.service.js"></script>
+    <!-- controllers -->
+    <script src="/app/layout/books/list/list.controller.js"></script>
+    <script src="/app/layout/books/details/details.controller.js"></script>
+</body>
+</html>

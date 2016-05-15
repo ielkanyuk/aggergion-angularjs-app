@@ -1,0 +1,12 @@
+<div class="gridListdemoBasicUsage" ng-cloak>
+<md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="5" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12px" md-gutter-gt-sm="8px">
+
+    <md-grid-tile ng-repeat="book in vm.booksList" class="gray" ui-sref="details({id: book.id})">
+        <img ng-src="{{book.cover}}" previewimg/>
+        <md-grid-tile-footer>
+          <h3>{{book.title.default}}</h3>
+        </md-grid-tile-footer>
+    </md-grid-tile>
+
+  </md-grid-list>
+</div>

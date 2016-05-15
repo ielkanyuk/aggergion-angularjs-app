@@ -1,0 +1,28 @@
+<md-content>
+    <md-list>
+      <md-list-item class="md-3-line">
+        <img ng-src="{{vm.book.cover}}" previewimg class="md-avatar" alt="{{ vm.book.title.default }}"/>
+        <div class="md-list-item-text" layout="column">
+          <h3>{{ vm.book.title.default }}</h3>
+          <p>{{ vm.book.options.authors }}</p><br/>
+          <h4>{{ vm.book.description.default }}</h4><br/>
+          <p>{{ vm.book.options.Publisher }}</p>
+          <p>{{ vm.book.options.ISBN }}</p><br/>
+          <p>{{vm.book.platformSupport.join(", ")}}</p><br/>
+          <p>{{vm.book.tags.join(", ")}}</p><br/>
+          <div ng-repeat="previewImgId in vm.book.previewImages">
+            <img class="preview" ng-src="{{previewImgId}}" previewimg class="md-avatar" />
+          </div><br/>
+          <div ng-repeat="previewVideoId in vm.book.previewVideos">
+              <video width="320" height="180" previewvideo controls src="{{previewVideoId}}" />
+          </div><br/>
+          <div ng-repeat="bundle in vm.bundles">
+              <a ng-href="{{bundle.resourceId}}" bundlelink>Bundle {{$index+1}}</a>
+          </div><br/>
+        </div>
+      </md-list-item>
+
+      <md-divider></md-divider><br/>
+      <md-button class="md-primary md-raised" ui-sref="list"> Back to list </md-button>
+    </md-list>
+  </md-content>

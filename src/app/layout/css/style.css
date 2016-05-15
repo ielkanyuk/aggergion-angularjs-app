@@ -1,0 +1,67 @@
+.gridListdemoBasicUsage md-grid-list {
+  margin: 8px auto 8px;
+  width: 80%;
+}
+
+.gridListdemoBasicUsage .gray {
+  background: #f5f5f5; }
+
+.gridListdemoBasicUsage .green {
+  background: #b9f6ca; }
+
+.gridListdemoBasicUsage .yellow {
+  background: #ffff8d; }
+
+.gridListdemoBasicUsage .blue {
+  background: #84ffff; }
+
+.gridListdemoBasicUsage .purple {
+  background: #b388ff; }
+
+.gridListdemoBasicUsage .red {
+  background: #ff8a80; }
+
+.gridListdemoBasicUsage md-grid-tile {
+  cursor: pointer;
+  transition: all 400ms ease-out 50ms; }
+
+md-content {
+  margin: 20px auto;
+  width: 70%;
+}
+
+.md-avatar {
+  width: auto !important;
+  height: auto !important;
+  border-radius: 0 !important;
+}
+
+.md-list-item-text {
+  margin: 16px !important;
+}
+
+.md-list-item-text h4 {
+  white-space:normal !important;
+}
+
+.preview {
+  width: 100px;
+  height: 150px;
+}
+
+h1.not-found  {
+  font-size: 156pt !important;
+  margin-bottom: 10px;
+}
+
+h4.not-found  {
+  margin-bottom: 50px;
+}
+
+.not-found  {
+  text-align: center;
+}
+
+div.not-found {
+  margin: 0 auto !important;
+}
