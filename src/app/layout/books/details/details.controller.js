@@ -5,12 +5,12 @@
         .module('app')
         .controller('DetailsController', DetailsController);
 
-    DetailsController.$inject = ['bookItem', 'bookBundles', 'API_STORAGE_URL'];
+    DetailsController.$inject = ['bookItem', 'bookBundles'];
 
-    function DetailsController(bookItem, bookBundles, API_STORAGE_URL) {
+    function DetailsController(bookItem, bookBundles) {
         var vm = this;
+        vm.bundles = [];
 
-        vm.storageUrl = API_STORAGE_URL;
         vm.book = bookItem;
         vm.bundles = bookBundles;
     }
